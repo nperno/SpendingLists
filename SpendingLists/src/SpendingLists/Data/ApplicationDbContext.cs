@@ -10,6 +10,9 @@ namespace SpendingLists.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
+        public DbSet<SpendingList> SpendingLists { get; set; }
+        public DbSet<ListItem> ListItems { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
