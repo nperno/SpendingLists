@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{11540126-3F79-4ABD-B69F-5D4166490ED6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F26BD5C1-B52A-4B81-9AFE-D3AA792B780D}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SpendingLists", "src\SpendingLists\SpendingLists.xproj", "{B5BD77F7-FA78-423A-B891-8B99A7A1E059}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5BD77F7-FA78-423A-B891-8B99A7A1E059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5BD77F7-FA78-423A-B891-8B99A7A1E059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5BD77F7-FA78-423A-B891-8B99A7A1E059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5BD77F7-FA78-423A-B891-8B99A7A1E059}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B5BD77F7-FA78-423A-B891-8B99A7A1E059} = {11540126-3F79-4ABD-B69F-5D4166490ED6}
+	EndGlobalSection
+EndGlobal
