@@ -1,7 +1,8 @@
-﻿{
+{
   "userSecretsId": "aspnet-SpendingLists-d732ac13-4f54-4021-b582-eea2d7171156",
 
   "dependencies": {
+    "Microsoft.AspNet.Identity.Core": "2.2.1",
     "Microsoft.AspNetCore.Authentication.Cookies": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics": "1.0.0",
     "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "1.0.0",

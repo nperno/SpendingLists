@@ -8,8 +8,8 @@ using SpendingLists.Data;
 namespace SpendingLists.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20160724165316_initialSetupOfEntities")]
-    partial class initialSetupOfEntities
+    [Migration("20160724174632_bew")]
+    partial class bew
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -184,7 +184,7 @@ namespace SpendingLists.Data.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<int?>("SpendingListId");
+                    b.Property<int>("SpendingListId");
 
                     b.HasKey("Id");
 
@@ -248,9 +248,10 @@ namespace SpendingLists.Data.Migrations
 
             modelBuilder.Entity("SpendingLists.Models.ListItem", b =>
                 {
-                    b.HasOne("SpendingLists.Models.SpendingList")
+                    b.HasOne("SpendingLists.Models.SpendingList", "SpendingList")
                         .WithMany("ListItems")
-                        .HasForeignKey("SpendingListId");
+                        .HasForeignKey("SpendingListId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
         }
     }

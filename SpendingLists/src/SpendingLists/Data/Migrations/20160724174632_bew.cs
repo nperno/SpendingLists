@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace SpendingLists.Data.Migrations
 {
-    public partial class initialSetupOfEntities : Migration
+    public partial class bew : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -33,7 +33,7 @@ namespace SpendingLists.Data.Migrations
                     Cost = table.Column<float>(nullable: false),
                     Link = table.Column<string>(nullable: true),
                     Name = table.Column<string>(nullable: true),
-                    SpendingListId = table.Column<int>(nullable: true)
+                    SpendingListId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -43,7 +43,7 @@ namespace SpendingLists.Data.Migrations
                         column: x => x.SpendingListId,
                         principalTable: "SpendingLists",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
